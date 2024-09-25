@@ -1,4 +1,20 @@
+@use "../abstracts/" as abs;
+
 a:link,
 a:visited{
     text-decoration: none;
+    color: abs.$color-text-dark;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+    font-family: abs.$font-body;
+    font-weight: bold;
 }

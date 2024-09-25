@@ -29,6 +29,11 @@
     line-height: $lineHeight;
 }
 
+// ===== Layout =====
+@mixin container{
+    width: 80%;
+}
+
 // ===== Breakpoints =====
 @mixin respond ($breakpoint) {
     @if $breakpoint == desktop-lg { // >= 1025px

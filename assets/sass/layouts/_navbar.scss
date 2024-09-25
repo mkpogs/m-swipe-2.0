@@ -1,0 +1,42 @@
+@use "../abstracts/" as abs;
+
+.navbar{
+    @include abs.flexPos(row, space-between);
+    @include abs.container;
+
+    padding: abs.$spacing-md 0 0;
+    margin: 0 0 abs.$spacing-lg * 2;
+
+    &-logo{
+
+        &__img{
+            display: block
+        }
+    }
+
+    &-main{
+
+        &-list{
+            @include abs.flexPos;
+            gap: 0 1.5rem;
+
+            &__link:link,
+            &__link:visited{
+                color: abs.$color-text-light;
+                font-size: abs.$fontSize-md * 1.1;
+                font-weight: bold;
+                
+            }
+
+            &__link:hover,
+            &__link:active{
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+    &-cta{
+
+    }
+}
