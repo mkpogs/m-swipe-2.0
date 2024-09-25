@@ -1,0 +1,57 @@
+@use "./variables" as var;
+
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%posCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Flex Positioning
+@mixin flexPos($dir: row, $justify: center, $align: center){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+// ===== Headings =====
+@mixin headings($size: abs.$headings-xxl, $lineHeight: abs.$lineHeight-sm){
+    font-family: abs.$font-heading;
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+// ===== Breakpoints =====
+@mixin respond ($breakpoint) {
+    @if $breakpoint == desktop-lg { // >= 1025px
+        @media only screen and (min-width: 64.0625em){
+            @content;
+        }
+    }
+
+    @else if $breakpoint == desktop-sm { // <= 1024px
+        @media only screen and (max-width: 64em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == tablet { // <= 768px
+        @media only screen and (max-width: 48em){
+            @content;
+        }
+    }
+
+    @else if $breakpoint == mobile { // <= 550px
+        @media only screen and (max-width: 34.375em){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// ===== Font-Family =====
+$font-body: "Roboto", sans-serif;
+$font-heading: "Anek Telugu", sans-serif;
+
+
+// ===== Colors =====
+$color-text-dark: #000;
+$color-text-light: #fff;
+$color-grey: #adbdcc;
+
+$color-purple-1: #6962f1;
+$color-purple-2: #7000ff;
+$color-blue-1: #00d4ff;
+$color-primary-accent: #0a2540;
+
+$color-bg-white: #fff;
+$color-bg-light: #f7f9fc;
+
+$color-btn-primary-hover: #6d7a88;
+
+$color-primary-gradient: linear-gradient(
+    101.33deg,
+    #08209a 0.76%,
+    #6563ff 33.33%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+);
+
+// ===== Font Size =====
+$fontSize-xxl: 4rem;
+$fontSize-xl: 3.6rem;
+$fontSize-lg: 2.8rem;
+$fontSize-md: 2rem;
+$fontSize-sm: 1.6rem;
+$fontSize-xs: 1.2rem;
+
+$headings-xxl: 3.2rem;
+$headings-xl: 2.8rem;
+$headings-lg: 2.4rem;
+$headings-md: 2rem;
+$headings-sm: 1.6rem;
+$headings-xs: 1.2rem;
+
+$lineHeight-xxl: 1.6;
+$lineHeight-xl: 1.5;
+$lineHeight-lg: 1.4;
+$lineHeight-md: 1.3;
+$lineHeight-sm: 1.25;
+$lineHeight-xs: 1.15;
+
+
+// ===== Spacing =====
+$spacing-sm: .8rem;
+$spacing-md: 1.6rem;
+$spacing-lg: 3.2rem;
+$spacing-xl: 6.4rem;
+
+// ===== Width =====
+$full-width: 100%;
+$half-width: 50%;
+
+// ===== Box Shadow =====
+$box-shadow-standard: 0px 2px 40px rgba($color-text-dark, 0.15);
