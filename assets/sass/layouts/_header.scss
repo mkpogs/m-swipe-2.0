@@ -1,15 +1,55 @@
 @use "../abstracts/" as abs;
 
 .header{
-    width: 100%;
-    
-    background-color: greenyellow;
-
+    width: abs.$full-width;
     @include abs.flexPos(column, space-between);
+
+    background-color: greenyellow;
+    
 
     &-container{
         @include abs.container;
-
         background-color: burlywood;
+
+        &-grid{
+            @include abs.grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 2rem;
+            
+        }
+    }
+
+    &-left{
+        width: 100%;
+        
+    }
+
+    &-right{
+        width: 100%;
+        
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    &-content__headings{
+        @include abs.headings(abs.$headings-xxl*3, abs.$lineHeight-md);
+
+        margin: 0 0 abs.$spacing-lg;
+    }
+
+    &-content__paragraph{
+        font-size: abs.$fontSize-md;
+        margin: 0 0 abs.$spacing-lg;
+
+        width: 70%;
+    }
+
+    &-hero__img{
+        display: block;
+        height: 70rem;
+
+        margin-top: -6.5rem;
     }
 }

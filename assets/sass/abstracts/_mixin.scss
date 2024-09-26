@@ -23,8 +23,8 @@
 
 
 // ===== Headings =====
-@mixin headings($size: abs.$headings-xxl, $lineHeight: abs.$lineHeight-sm){
-    font-family: abs.$font-heading;
+@mixin headings($size: var.$headings-xxl, $lineHeight: var.$lineHeight-sm){
+    font-family: var.$font-heading;
     font-size: $size;
     line-height: $lineHeight;
 }
@@ -32,6 +32,18 @@
 // ===== Layout =====
 @mixin container{
     width: 80%;
+}
+
+@mixin grid{
+    display: grid;
+}
+
+@mixin two-column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin four-column{
+    grid-template-columns: repeat(4, 1fr);
 }
 
 // ===== Breakpoints =====
